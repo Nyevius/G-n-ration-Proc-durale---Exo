@@ -38,11 +38,10 @@ public class RoomNode
 
         bool horizontalSplit;
 
-        // Forcer le sens du split selon les proportions
         if (size.width / (float)size.height >= 1.25f)
-            horizontalSplit = false; // Split vertical
+            horizontalSplit = false;
         else if (size.height / (float)size.width >= 1.25f)
-            horizontalSplit = true; // Split horizontal
+            horizontalSplit = true;
         else
             horizontalSplit = randomService.Chance(0.5f);
 

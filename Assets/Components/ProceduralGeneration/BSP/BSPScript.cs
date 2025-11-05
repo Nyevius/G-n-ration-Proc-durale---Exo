@@ -26,9 +26,6 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
             BuildGround();
         }
 
-        // -------------------------------------- ROOM ---------------------------------------------
-
-        /// Marks the grid cells of the room as occupied
         private void PlaceRoom(RectInt room, string roomTexture)
         {
             for (int ix = room.xMin; ix < room.xMax; ix++)
@@ -43,28 +40,22 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
             }
         }
 
-        // -------------------------------------- CORRIDOR --------------------------------------------- 
-
-        /// Creates an L-shaped corridor between two points, randomly choosing horizontal-first or vertical-first
         private void CreateDogLegCorridor(Vector2Int start, Vector2Int end)
         {
             bool horizontalFirst = RandomService.Chance(0.5f);
 
             if (horizontalFirst)
             {
-                // Draw horizontal line first, then vertical
                 CreateHorizontalCorridor(start.x, end.x, start.y);
                 CreateVerticalCorridor(start.y, end.y, end.x);
             }
             else
             {
-                // Draw vertical line first, then horizontal
                 CreateVerticalCorridor(start.y, end.y, start.x);
                 CreateHorizontalCorridor(start.x, end.x, end.y);
             }
         }
 
-        /// Creates a horizontal corridor from x1 to x2 at the given y coordinate
         private void CreateHorizontalCorridor(int x1, int x2, int y)
         {
             int xMin = Mathf.Min(x1, x2);
@@ -79,7 +70,6 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
             }
         }
 
-        /// Creates a vertical corridor from y1 to y2 at the given x coordinate
         private void CreateVerticalCorridor(int y1, int y2, int x)
         {
             int yMin = Mathf.Min(y1, y2);
@@ -94,7 +84,6 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
             }
         }
 
-        // -------------------------------------- GROUND --------------------------------------------- 
 
         private void BuildGround()
         {
