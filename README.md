@@ -65,7 +65,7 @@ Pour ce script, on abandonne le placement de salles. Cet algo sert à générer 
 ## Noise Generator  
 Un autre algorithme de génération de terrain, mais plus précis cette fois. On passera par la librairie FastNoiseLite afin de générer une map de bruit. On le créé, lui assigne plusieurs paramètres et la librairie fait le reste il ne nous reste qu'à instancier nos tiles en fonction du résultat.  
 
-<img src="Documentation/NoiseGenerator.png?raw=true"/>  
+<img src="Documentation/Noise.png?raw=true"/>  
 
 ## Credits  
 Merci en premier lieu à [RUTKOWSKI Yona](https://sites.google.com/view/rutkowski-yona) pour son enseignement et ses corrections.  
