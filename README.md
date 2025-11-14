@@ -49,7 +49,7 @@ Pour finir, référencez le fichier ```.asset``` dans votre object ```Procedural
 ## Simple Room Placement
 Cet algorithme commence par générer des salles et les placer de façon aléatoire à condition qu'elles n'overlapent pas d'autres salles.  
 
-<img src="Documentation/Simpleroomplacement.png?raw=true"/>
+<img src="Documentation/SimpleRoomPlacement.png?raw=true"/>
 
 ## BSP
 Ce script va également générer des salles au début mais non pas de façon aléatoire cette fois. Il découpe la grille jusqu'à atteindre le nombre de nodes enfants demandé. Une fois ce nombre atteint, il va s'arrêter et instancier les salles à ces positions.
