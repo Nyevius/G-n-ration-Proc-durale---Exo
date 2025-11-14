@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: NoiseGeneratorAsset
   m_EditorClassIdentifier: 
   _maxSteps: 1000
-  _maxRooms: 5
-  _NoiseType: 0
-  _frequency: 0.01
+  _noiseType: 0
+  _frequency: 0.0176
   _amplitude: 1
   _FractalType: 0
   _fractalOctaves: 3
@@ -25,4 +24,4 @@ MonoBehaviour:
   _ppStrength: 2
   _cellularDistanceFunction: 1
   _cellularReturnType: 1
-  _Jitter: 1
+  _jitter: 1

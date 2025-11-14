@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfc672733bb738e45948b2f7da55912a, type: 3}
   m_Name: CellularAutomataAsset
   m_EditorClassIdentifier: 
-  _maxSteps: 3
-  _noiseDensity: 50
+  _maxSteps: 4
+  _groundDensity: 45
+  _minGroundNeighbourCount: 4
